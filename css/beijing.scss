@@ -1,0 +1,333 @@
+@import "mixin";
+header{
+  @include juxing(100%,86px);
+  background:rgba(255,255,255,0.7);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+  ul{
+    @include juxing(1300px,100%);
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    img{
+      display: block;
+      @include juxing(340px,86px);
+    }
+    li{
+      @include juxing(100px,38px);
+      text-align: center;
+      line-height: 38px;
+      box-sizing: border-box;
+      a{
+        font-size:18px;
+        color: #3D8532;
+      }
+      &:hover{
+        border-bottom: 2px solid #2D6E16;
+    }
+    }
+    .li{
+      @include juxing(226px,38px);
+      span{
+        font-size:18px;
+        color:  #3D8532;
+        font-weight: bold;
+      }
+      &:hover{
+        border-bottom: 0 solid black;
+      }
+    }
+  }
+}
+
+
+.banner{
+  @include juxing(100%,auto);
+  background:#66A570;
+  .banner-box{
+    @include juxing(1300px,800px);
+    margin:0 auto;
+    background-image: url("../img/datu.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    ul{
+      @include juxing(1090px,150px);
+      @include p-leftright;
+      bottom:0;
+      background:white;
+      overflow: hidden;
+      display: flex;
+      li{
+        @include juxing(180px,100%);
+        margin-right: 1px;
+        position: relative;
+        transition: all 0.3s;
+        img{
+          display: block;
+          width:100%;
+          height:100%;
+        }
+        .cc{
+          width:100%;
+          height:30px;
+          background: #7C8289;
+          position: absolute;
+          bottom:-30px;
+          text-align: center;
+          line-height: 30px;
+          font-size:16px;
+          color: white;
+          transition:  all 0.5s;
+        }
+        &:hover{
+          transform: scale(1.1,1.1);
+        }
+      }
+    }
+  }
+}
+
+
+.banner .banner-box .lunbo ul li:hover .cc{
+  bottom:5px;
+}
+
+section{
+  @include juxing(100%,363px);
+  background-image: url("../img/nbg.jpg");
+  background-size: 100%;
+  background-position: center;
+  .section-box{
+    @include juxing(1300px,100%);
+    margin:0 auto;
+    box-sizing: border-box;
+    border:1px solid rgba(0,0,0,0);
+    position: relative;
+    & img:nth-child(1){
+      display: block;
+      @include juxing(421px,82px);
+      margin:20px auto;
+    }
+    .bao{
+      @include juxing(100%,250px);
+      img{
+        display: block;
+        @include juxing(428px,215px);
+        margin-left:200px;
+        float: left;
+      }
+      ul{
+        @include juxing(542px,205px);
+        float: left;
+        margin-top: 20px;
+        li{
+          @include juxing(100%,42px);
+          box-sizing: border-box;
+          border-bottom:1px dashed #ccc;
+          line-height: 42px;
+          display: flex;
+          justify-content: space-between;
+          a{
+            font-size:16px;
+            color: black;
+            &:hover{
+              color: #C2C3CF;
+            }
+          }
+          span{
+            font-size:16px;
+            color: black;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+.tt{
+  @include juxing(100%,292px);
+  background-image: url(../img/lc.jpg);
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  img{
+    display: block;
+    @include juxing(1174px,100%);
+    margin:0 auto;
+  }
+}
+
+
+.about{
+  @include juxing(100%,510px);
+  background-image: url(../img/nbg.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  .content{
+    @include juxing(1000px,100%);
+    margin:0 auto;
+    display: flex;
+    .left{
+      height:100%;
+      flex: 5.5;
+      position: relative;
+      box-sizing: border-box;
+      padding-right: 30px;
+      img{
+        @include juxing(100px,350px);
+        display: block;
+        position: absolute;
+      }
+      img:nth-child(1){
+        bottom:35px;
+        left:0;
+      }
+      img:nth-child(2){
+        bottom:65px;
+        left:112px;
+       }
+      img:nth-child(3){
+        left:224px;
+        bottom:125px;
+        }
+      img:nth-child(4){
+        left:336px;
+        bottom:95px;
+         }
+      img:nth-child(5){
+        left:448px;
+        bottom:65px;
+          }
+    }
+    .right{
+      height:100%;
+      flex: 4.5;
+      box-sizing: border-box;
+      padding-top:80px;
+      h2{
+        font-size:20px;
+        @include juxing(150px,50px);
+        box-sizing: border-box;
+        color: #253B0C;
+        border-bottom:2px solid #253B0C;
+        margin:0 auto;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      p{
+        font-size:16px;
+        margin-top: 20px;
+        text-indent: 2em;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+
+footer{
+  @include juxing(100%,290px);
+  background: #DCE8E1;
+  .footer{
+    @include juxing(1100px,100%);
+    margin:0 auto;
+    ul{
+      @include juxing(1100px,66px);
+      box-sizing: border-box;
+      border-bottom:1px solid #ccc;
+      display: flex;
+      align-items: center;
+      span{
+        display: block;
+        @include juxing(2px,18px);
+        background: #132018;
+      }
+      li{
+        @include juxing(110px,20px);
+        text-align: center;
+        line-height: 20px;
+        a{
+          font-size:18px;
+          color: #132018;
+          &:hover{
+            color: #4F6A46;
+          }
+        };
+      }
+    }
+  }
+}
+
+footer{
+  .content{
+    @include juxing(100%,91px);
+    border-bottom:1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 0;
+    .top{
+      @include juxing(100%,38px);
+      margin-bottom:5px;
+      display: flex;
+      .box{
+        @include juxing(110px ,38px);
+        background: #516B48;
+        text-align: center;
+        line-height: 38px;
+        font-size:20px;
+        color: rgba(255,255,255,0.8);
+      }
+      a{
+        @include juxing(110px ,38px);
+        display: block;
+        font-size:16px;
+        color: #46534D;
+        text-align: center;
+        line-height: 38px;
+        &:hover{
+          color: #4F6A46;
+        }
+      }
+    }
+    .bottom{
+      @include juxing(100%,38px);
+      display: flex;
+      .box{
+        @include juxing(110px ,38px);
+        background: #516B48;
+        text-align: center;
+        line-height: 38px;
+        font-size:20px;
+        color: rgba(255,255,255,0.8);
+      }
+      a{
+        @include juxing(50px ,38px);
+        display: block;
+        font-size:16px;
+        color: #46534D;
+        text-align: center;
+        line-height: 38px;
+        &:hover{
+          color: #4F6A46;
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  ol{
+    li{
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
